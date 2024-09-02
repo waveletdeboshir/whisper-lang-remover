@@ -25,7 +25,8 @@ finetuned versions:
 * https://huggingface.co/waveletdeboshir/whisper-base-ru-pruned-ft
 * https://huggingface.co/waveletdeboshir/whisper-small-ru-pruned-ft
 
-As for whisper-medium and large models, this method will not be very effective for them. If we calculate the ratio of the number of parameters of the embedding layer in decoder and the last linear layer to the total number of parameters of the model, we will understand this:
+# About Whisper medium and large
+ This method will not be very effective for large whisper models. If we calculate the ratio of the number of parameters of the embedding layer in decoder and the last linear layer to the total number of parameters of the model, we will understand this:
 
 | model | proportion of token embeddings and proj_out layers|
 | ---- | ---- |
